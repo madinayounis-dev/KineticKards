@@ -1,8 +1,8 @@
-KinetiKards – Flashcard Study Tool
+KineticKards – Flashcard Study Tool
 
 Project Overview
 
-KinetiKards is a web-based flashcard study tool that allows users to create, store, and review digital flashcards for A-Level Physics. The project includes a login system and personalised flashcard storage, utilising PHP for the backend and CSV for data storage. It was developed as part of my A-Level Computer Science coursework.
+KineticKards is a web-based flashcard study tool that allows users to create, store, and review digital flashcards for A-Level Physics. The project includes a login system and personalised flashcard storage, utilising PHP for the backend and CSV for data storage. It was developed as part of my A-Level Computer Science coursework.
 
 Installation and Setup Instructions
 
@@ -16,7 +16,7 @@ To run this project locally, you need to have the following installed:
 
 Database Setup
 
-KinetiKards uses a local database on XAMPP for storing user data and flashcards. Here’s how to set it up:
+KineticKards uses a local database on XAMPP for storing user data and flashcards. Here’s how to set it up:
 
 	1.	Download and Install XAMPP
 If you haven’t installed XAMPP yet, download it from here and follow the installation instructions for your operating system.
@@ -24,8 +24,8 @@ If you haven’t installed XAMPP yet, download it from here and follow the insta
 Launch the XAMPP Control Panel and start the Apache and MySQL services.
 	3.	Create the Database
 	•	Open phpMyAdmin by visiting http://localhost/phpmyadmin/ in your browser.
-	•	Create a new database for KinetiKards
-	•	Import the provided SQL file (kinetikards_db.sql) to create the required tables. You can find the SQL file in the database folder of this repository.
+	•	Create a new database for KineticKards
+	•	Import the provided SQL file (kinetickards_db.sql) to create the required tables. You can find the SQL file in the database folder of this repository.
 	4.	Configure Database Connection
 	•	Navigate to the project’s root folder and open the config.php file.
 	•	Update the database configuration with your local MySQL credentials:
