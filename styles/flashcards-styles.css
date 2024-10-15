@@ -1,0 +1,159 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Setting default font family */
+}
+
+/* Header styles */
+.header {
+    font-family: "Poppins", sans-serif; /* Header font family */
+    color: #8270d0; /* Header text color */
+    padding: 10px; /* Header padding */
+    text-align: left; /* Header text alignment */
+}
+
+/* Container styles */
+.container {
+    max-width: 800px; /* Maximum width for the container */
+    height: 620px; /* Container height */
+    margin: 20px auto; /* Centering the container and adding margin */
+    display: flex; /* Using flexbox for layout */
+    flex-direction: column; /* Setting flex direction to column */
+    align-items: stretch; /* Stretching items to fill container */
+}
+
+/* Card styles */
+.card {
+    border-radius: 10px; /* Card border radius */
+    padding: 30px; /* Card padding */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    background-color: #a394e5; /* Card background color */
+    color: white; /* Card text color */
+    flex: 1; /* Allowing card to expand to fill container */
+}
+
+.card h2 {
+    margin-top: 0; /* Removing top margin for h2 */
+    font-size: 22px; /* Font size for h2 */
+}
+
+.card p {
+    color: #ffffff; /* Paragraph text color */
+}
+
+.card ul {
+    padding: 0; /* Removing default padding */
+    margin: 20px 0 0; /* Setting margin for ul */
+    list-style: none; /* Removing default list styles */
+}
+
+.card ul li {
+    margin-bottom: 10px; /* Spacing between list items */
+}
+
+/* Button styles */
+.button {
+    display: flex; /* Using flexbox for button layout */
+    padding: 10px 20px; /* Button padding */
+    background-color: #ffffff; /* Button background color */
+    color: #2e3856; /* Button text color */
+    text-decoration: none; /* Removing default text decoration */
+    border-radius: 5px; /* Button border radius */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+}
+
+.button:hover {
+    background-color: #dddddd; /* Button background color on hover */
+    color: #2e3856; /* Button text color on hover */
+}
+
+/* Flashcard navigation styles */
+.flashcard-navigation {
+    display: flex; /* Using flexbox for navigation */
+    justify-content: center; /* Centering navigation items */
+    align-items: center; /* Aligning navigation items */
+    gap: 30px; /* Spacing between navigation items */
+    padding-bottom: 20px; /* Padding for bottom spacing */
+    border-bottom: 1px solid gray; /* Border bottom for separation */
+}
+
+/* Previous and next button styles */
+.button.previous-button,
+.button.next-button {
+    padding: 10px 10px; /* Button padding */
+    color: white; /* Button text color */
+    background-color: #0a092d; /* Button background color */
+    border: solid 2px white; /* Border style */
+    text-decoration: none; /* Removing default text decoration */
+    border-radius: 50%; /* Circular border radius */
+    font-size: 30px; /* Button font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+}
+
+/* Face button styles */
+.button.face {
+    padding: 0; /* Removing padding for face button */
+    color: white; /* Button text color */
+    background-color: inherit; /* Inheriting background color */
+    text-decoration: none; /* Removing default text decoration */
+    font-size: 60px; /* Button font size */
+    cursor: pointer; /* Changing cursor to pointer */
+    border-radius: 50%; /* Circular border radius */
+    transition: all ease 0.3s; /* Smooth transition for all properties */
+}
+
+.button.face:hover {
+    transform: scale(1.05); /* Scaling up on hover */
+}
+
+/* Flashcard indicator styles */
+.flashcard-indicator {
+    font-size: 20px; /* Indicator font size */
+    color: #8971f7; /* Indicator text color */
+    font-weight: bold; /* Indicator font weight */
+}
+
+/* Adjust margin for buttons on smaller screens */
+@media screen and (max-width: 600px) {
+    .button.previous-button,
+    .button.next-button {
+        padding: 8px 16px; /* Adjusted padding for smaller screens */
+    }
+}
+
+/* Flashcard styles */
+.flashcard-front,
+.flashcard-back {
+    backface-visibility: hidden; /* Hiding backface of cards */
+    position: absolute; /* Positioning cards absolutely */
+    top: 0; /* Aligning cards to top */
+    left: 0; /* Aligning cards to left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex; /* Using flexbox for layout */
+    align-items: center; /* Aligning items vertically */
+    justify-content: center; /* Centering items horizontally */
+    text-align: center; /* Centering text */
+    user-select: none; /* Disabling user selection */
+    cursor: pointer; /* Changing cursor to pointer */
+}
+
+.flashcard-front {
+    transform: rotateY(0deg); /* Initial rotation for front card */
+}
+
+.flashcard-back {
+    transform: rotateY(180deg); /* Initial rotation for back card */
+}
+
+.flashcard-content {
+    position: relative; /* Relative positioning for content */
+    transform-style: preserve-3d; /* Preserving 3D transformations */
+    transition: transform 0.5s; /* Smooth transition for transform */
+}
+
+.flashcard-content.flipped {
+    transform: rotateY(180deg); /* Rotation for flipped card */
+}

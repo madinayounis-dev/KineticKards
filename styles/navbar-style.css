@@ -1,0 +1,123 @@
+/* Reset default styles and set global styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECE7FE;
+}
+
+/* Apply box-sizing border-box to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #ECE7FE;
+    color: white;
+    padding: 10px;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+/* Navbar container flex layout */
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.navbar__logo img {
+    height: 30px;
+}
+
+/* Navbar links styling */
+.navbar__links {
+    display: flex;
+}
+
+/* Individual navbar link styling */
+.navbar__link {
+    color: #A394E5;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+/* Search bar styling */
+.navbar__search {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Input field styling */
+.navbar__search input {
+    padding: 10px 12px 10px 36px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    background-color: #A394E5;
+    color: white;
+}
+
+/* Search icon styling */
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-8px);
+    pointer-events: none;
+}
+
+/* Upgrade button styling */
+.upgrade {
+    padding: 10px 20px;
+    background-color: #ffcd1f;
+    color: rgb(97, 97, 97) !important;
+    border-radius: 20px;
+}
+
+/* Icon within search icon */
+.search-icon i {
+    font-size: 18px;
+    color: white;
+}
+
+/* Navbar actions styling */
+.navbar__actions {
+    display: flex;
+    margin-left: 20px;
+    align-items: center; 
+}
+
+/* Individual action within navbar actions */
+.navbar__actions .navbar__action {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Styling for logo */
+.logo {
+    flex-grow: 1;
+}
+
+/* Styling for logo text */
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Footer styling */
+footer {
+    position: fixed; /* Fix footer to the bottom of the viewport */
+    margin: 0px -20px; /* Ensure full width */
+    color: #A394E5;
+    text-align: right;
+    bottom: 0; /* Align to the bottom of the viewport */
+    width: 100%;
+}

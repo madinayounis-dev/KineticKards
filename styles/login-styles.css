@@ -1,0 +1,148 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Setting default font */
+}
+
+/* Styling for the container of the content */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Taking 90% of viewport height */
+}
+
+/* Styling for the main wrapper */
+.wrapper {
+    width: 650px; /* Setting fixed width */
+    background: #9F91E6; /* Background color */
+    border: 1px solid #9F91E6; /* Border color */
+    color: white; /* Text color */
+    padding: 30px 40px; /* Padding */
+    border-radius: 10px; /* Border radius */
+}
+
+/* Styling for the main heading */
+.wrapper h1 {
+    font-size: 36px; /* Font size */
+    text-align: center; /* Center alignment */
+    margin-bottom: 30px; /* Bottom margin */
+}
+
+/* Styling for the input box container */
+.wrapper .input-box {
+    position: relative; /* Relative positioning */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    margin: 30px 0; /* Margin */
+}
+
+/* Styling for the input field */
+.input-box input {
+    width: 100%; /* Full width */
+    height: 50px; /* Height */
+    background: #C1B7F3; /* Background color */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    border-radius: 40px; /* Border radius */
+    font-size: 16px; /* Font size */
+    color: #ffffff; /* Text color */
+    padding-left: 20px; /* Left padding */
+    transform: translateX(-10px); /* Moving the input field slightly to the left */
+}
+
+/* Styling for the input placeholder */
+.input-box input::placeholder {
+    color: #ffffff; /* Placeholder color */
+}
+
+/* Styling for the icon inside input-box */
+.input-box i {
+    position: absolute; /* Absolute positioning */
+    right: 20px; /* Right position */
+    top: 50%; /* Top position */
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 20px; /* Font size */
+}
+
+/* Styling for the 'Remember me' and 'Forgot password' section */
+.wrapper .remember-forgot {
+    display: flex; /* Flex layout */
+    justify-content: space-between; /* Space between items */
+    font-size: 14.5px; /* Font size */
+    color: #e5fbff; /* Text color */
+    margin: -15px 0 15px; /* Margin */
+}
+
+/* Styling for the checkbox label in 'Remember me' section */
+.remember-forgot label input {
+    margin-right: 3px; /* Right margin */
+}
+
+/* Styling for the links in 'Remember me' and 'Forgot password' section */
+.remember-forgot a {
+    color: #E6E6FE; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+/* Styling for the hover effect on links */
+.remember-forgot a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for the button */
+.wrapper .btn {
+    width: 100%; /* Full width */
+    height: 45px; /* Height */
+    background: #E6E6FE; /* Background color */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    border-radius: 40px; /* Border radius */
+    cursor: pointer; /* Cursor style */
+    font-size: 16px; /* Font size */
+    color: #022b3a; /* Text color */
+    font-weight: 600; /* Font weight */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+/* Styling for the hover effect on button */
+.wrapper .btn:hover {
+    background-color: #ededed; /* Background color on hover */
+}
+
+/* Styling for the register link */
+.wrapper .register-link {
+    font-size: 14.5px; /* Font size */
+    text-align: center; /* Center alignment */
+    margin-top: 20px; /* Top margin */
+}
+
+/* Styling for the links in register section */
+.register-link p a {
+    color: #ededed; /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: 600; /* Font weight */
+}
+
+/* Styling for the hover effect on links in register section */
+.register-link p a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for the password toggle button */
+.password-toggle-btn {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Top position */
+    right: 10px; /* Right position */
+    transform: translateY(-50%); /* Center vertically */
+    cursor: pointer; /* Cursor style */
+    font-size: 1.2rem; /* Font size */
+    color: white; /* Text color */
+}
+
+/* Styling for the hover effect on password toggle button */
+.password-toggle-btn:hover {
+    color: white; /* Text color on hover */
+}

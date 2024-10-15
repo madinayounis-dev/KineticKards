@@ -1,0 +1,195 @@
+/* Header styling */
+.header {
+    font-family: "Poppins", sans-serif;
+    color: #8270d0 ;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch; 
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #a394e5;
+    color: white;
+    flex: 1; /* Allows cards to grow to fill container height */
+
+/* Heading inside card */
+.card h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+/* Paragraph inside card */
+.card p {
+    color: #a394e5;
+}
+
+/* Unordered list inside card */
+.card ul {
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+}
+
+/* List items inside card */
+.card ul li {
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.button {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #2e3856;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #dddddd;
+    color: #2e3856;
+}
+
+/* Styling for cards inside container */
+.container .card {
+    margin-right: 10px;
+}
+
+/* Styling for last card inside container */
+.container .card:last-child {
+    margin-right: 0;
+}
+
+/* Dashboard heading */
+.dashboard h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Paragraph inside dashboard */
+.dashboard p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Unordered list inside dashboard */
+.dashboard ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* List items inside dashboard */
+.dashboard ul li {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+/* Performance section */
+.performance {
+    display: flex;
+    margin: 0 100px;
+    justify-content: space-between;
+}
+
+/* Performance item */
+.performance-item {
+    text-align: center;
+}
+
+/* Circle styling */
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #20242e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+/* Correct answer circle */
+.circle.correct {
+    background-color: rgb(130, 241, 130);
+}
+
+/* Incorrect answer circle */
+.circle.incorrect {
+    background-color: rgb(255, 105, 105);
+}
+
+/* Grade circle */
+.circle.grade{
+    background-color: gold;
+}
+.circle span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Performance item paragraph */
+.performance-item p {
+    margin: 5px 0;
+    color: #fff;
+}
+
+/* Upcoming test section */
+.upcoming-test {
+    background-color: #b5aae8; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Heading inside upcoming test section */
+.upcoming-test h3 {
+    color: #fff; 
+    margin-top: 0;
+    font-size: 22px;
+}
+
+/* Paragraph inside upcoming test section */
+.upcoming-test p {
+    color: #fff; 
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* Add test button styling */
+.add-test-button {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #e5fbff; 
+    color: #0a092d; 
+    border: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Add test button hover effect */
+.add-test-button:hover {
+    background-color: #afeaf3; 
+}
+}

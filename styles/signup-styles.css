@@ -1,0 +1,41 @@
+/* Resetting default styles and setting box model */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container for content */
+.content-wrapper {
+    display: flex; /* Flex container */
+    justify-content: center; /* Centering horizontally */
+    align-items: center; /* Centering vertically */
+    height: 90vh; /* 90% of the viewport height */
+}
+
+/* Styling for the register button */
+.registerbtn {
+    width: 100%; /* Full width */
+    height: 45px; /* Fixed height */
+    background: #e5fbff; /* Background color */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    border-radius: 40px; /* Rounded corners */
+    box-shadow: #022B3A; /* Box shadow */
+    cursor: pointer; /* Cursor style */
+    font-size: 16px; /* Font size */
+    color: #022b3a; /* Text color */
+    font-weight: 600; /* Font weight */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for register button */
+.registerbtn:hover {
+    background-color: #afeaf3; /* Background color on hover */
+}
+
+/* Styling for links */
+a {
+    color: #e5fbff; /* Text color */
+}
